@@ -1,14 +1,6 @@
 This is the funny game to guess the song from the Photo from that song which will be hidden under the yellow cubic objects. 
 You can hide/show the objects byclicking on them.
 
-Screenshots:
-
-
-<img width="998" alt="Screenshot 2020-04-22 at 4 54 56 PM" src="https://user-images.githubusercontent.com/20987636/79976816-dde86580-84ba-11ea-8fb5-f014a8c1ab5f.png">
-
-<img width="928" alt="Screenshot 2020-04-22 at 4 55 11 PM" src="https://user-images.githubusercontent.com/20987636/79976859-f0fb3580-84ba-11ea-9526-275ce21ac2b1.png">
-
-
 **Steps:**
 1. Clone this repo to your local
 2. Run Bollywood.html file.
@@ -28,3 +20,12 @@ There is one folder with name images, you can place more images over there.
 **Note:**
 - You can make your own rules, either remove 2 or 3 blocks.
 - You can type the file name in the textfield above and it hit 'enter', it will dynamically pick the image from images folder ad add it on the UI, under yellow cubes.
+
+
+Screenshots:
+<img width="998" alt="Screenshot 2020-04-22 at 4 54 56 PM" src="https://user-images.githubusercontent.com/20987636/79976816-dde86580-84ba-11ea-8fb5-f014a8c1ab5f.png">
+
+
+<img width="928" alt="Screenshot 2020-04-22 at 4 55 11 PM" src="https://user-images.githubusercontent.com/20987636/79976859-f0fb3580-84ba-11ea-9526-275ce21ac2b1.png">
+
+
