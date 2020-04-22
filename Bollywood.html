@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body{
+                margin-top: 100px;
+                margin-left: 25%;
+            }
+            .image{
+                position: absolute;
+            }
+            .block{
+                background-color: yellow;
+                height: 200px;
+                width: 300px;
+                display: table-cell;
+                text-align: center;
+                font-size: 25px;
+                vertical-align: middle;
+            }
+            .hideImage{
+                margin-top: 50px;
+                position: relative;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            function toggleBlock(id){
+                if($('#' + id).css('opacity')==='1'){
+                    $('#' + id).css('opacity','0')
+                }
+                else{
+                    $('#' + id).css('opacity','1')
+                }
+            }
+
+            function onIDChange(evt){
+                var val = $('input').val()
+                if(val)
+                    $('img').attr("src",'images/'+val+'.jpg')
+                hideImage()
+            }
+
+            function hideImage(){
+                $('#1_1').css('opacity','1')
+                $('#1_2').css('opacity','1')
+                $('#1_3').css('opacity','1')
+                $('#2_1').css('opacity','1')
+                $('#2_2').css('opacity','1')
+                $('#2_3').css('opacity','1')
+                $('#3_1').css('opacity','1')
+                $('#3_2').css('opacity','1')
+                $('#3_3').css('opacity','1')
+                $('input').val('')
+            }
+        </script>
+    </head>
+    <body>
+        <div class='input' onkeypress="if(event.key === 'Enter') onIDChange()">
+            Enter ID: <input type='text' name='id'/>
+        </div>
+        <div class='main-content'>
+            <img class="image" src='images/example.jpg' height='600px' width='900'>
+            <div class='hideImage'>
+                <div class='group'>
+                    <div id="1_1" class="block" onclick="toggleBlock('1_1')">1</div>
+                    <div id="1_2" class="block" onclick="toggleBlock('1_2')">2</div>
+                    <div id="1_3" class="block" onclick="toggleBlock('1_3')">3</div>
+                </div>
+                <div class='group'>
+                    <div id="2_1" class="block" onclick="toggleBlock('2_1')">4</div>
+                    <div id="2_2" class="block" onclick="toggleBlock('2_2')">5</div>
+                    <div id="2_3" class="block" onclick="toggleBlock('2_3')">6</div>
+                </div>
+                <div class='group'>
+                    <div id="3_1" class="block" onclick="toggleBlock('3_1')">7</div>
+                    <div id="3_2" class="block" onclick="toggleBlock('3_2')">8</div>
+                    <div id="3_3" class="block" onclick="toggleBlock('3_3')">9</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
